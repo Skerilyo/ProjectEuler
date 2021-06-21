@@ -1,13 +1,17 @@
 function next_prime() {
     prime = n + 1
+    good = true
     while (true) {
+        good = true
         for (x = 2; x <= prime / 2; x++) {
             if (prime % x == 0) {
+                good = false
                 prime += 1
                 break
             }
         }
-        return prime
+        if (good)
+            return prime
     }
 }
 

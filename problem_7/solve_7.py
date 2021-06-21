@@ -12,15 +12,13 @@ def next_prime(n):
             return prime
 
 def main():
-    i = 600851475143;
+    i = 1
     prime = 2
-
-    while i > prime:
-        if i % prime == 0:
-            i /= prime
-        else:
-            prime = next_prime(prime)
-
+    while(i < 10001):
+        i += 1
+        print(i)
+        prime = next_prime(prime)
+        print(prime)
     print(prime)
 
 if __name__ == "__main__":
