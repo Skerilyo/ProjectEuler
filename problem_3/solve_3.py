@@ -1,7 +1,7 @@
 def next_prime(n):
     prime = n + 1
     while (True):
-        for x in range(2,prime-1):
+        for x in range(2,(prime//2) + 1):
             if prime % x == 0:
                 prime += 1
                 break
@@ -12,7 +12,7 @@ def main():
     prime = 2
 
     while i > prime:
-        if not i % prime:
+        if i % prime == 0:
             i /= prime
         else:
             prime = next_prime(prime)

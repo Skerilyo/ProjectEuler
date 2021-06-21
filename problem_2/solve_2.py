@@ -6,7 +6,7 @@ def main():
 
     while prev + next < 4000000: #4 millions
         tmp = next + prev
-        if not tmp % 2:
+        if tmp % 2 == 0:
             i += tmp
         prev = next
         next = tmp

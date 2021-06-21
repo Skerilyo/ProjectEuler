@@ -6,7 +6,7 @@ function main() {
 
     while (prev + next < 4000000) {
         tmp = next + prev
-        if (!(tmp % 2))
+        if (tmp % 2 == 0)
             i += tmp
         prev = next
         next = tmp
