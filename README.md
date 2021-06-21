@@ -1,4 +1,7 @@
 Haskell -> runhaskell
+
 Python -> python3
-JS -> javascript
+
+JS -> node
+
 C -> gcc -> ./a.out
