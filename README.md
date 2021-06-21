@@ -4,4 +4,6 @@ Python -> python3
 
 JS -> node
 
-C -> gcc -> ./a.out
+C -> gcc -Wall -Wextra -Werror -> ./a.out
+
+https://projecteuler.net/
